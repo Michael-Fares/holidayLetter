@@ -1,4 +1,112 @@
-h1 {
-    color: green;
-    border: 1px solid black;
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: whitesmoke;
 }
+.maincontainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.michael-jess {
+    background-image: url('./jess-michael3.jpg');
+    height: 20rem;
+    width: 100vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.sectioncontainer, .sectioncontainer2, .topcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.jess {
+    background-image: url('./jess-yoga.jpeg');
+    height: 300px;
+    width: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin: 0.5rem auto;
+}
+.michael {
+    background-image: url('./michael-cat.jpeg');
+    height: 300px;
+    width: 15rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin: 0.5rem auto;
+}
+.intro {
+    text-align: center;
+    margin: 1rem;
+}
+
+.maincontainer > div, .maincontainer > p, .title {
+    padding: 0.25rem 1rem;
+}
+.title, .subtitle {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    
+}
+.title {
+    font-size: 2.5rem;
+    text-shadow: 0 5px 2px tomato;
+    margin-bottom: 0.25rem;
+}
+.subtitle {
+    color: darkgreen;
+}
+
+
+
+@media all and (min-width: 800px) {
+    .topcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .sectioncontainer {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        
+    }
+    .sectioncontainer2 {
+        display: grid;
+        grid-template-columns: 1fr 0.3fr;
+        
+    }
+    p {
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+    .michael-jess {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .michael {
+    order: 2;
+    }
+    .title {
+        font-size: 6rem;
+        margin-bottom: 0.5rem;
+    }
+       
+    .subtitle {
+        font-size: 3rem;
+    }
+    .michael, .jess {
+        width: 100%;
+        background-position: center;
+    }
+    .intro {
+        text-align: center;
+        margin: 0 0.5rem;
+    }
+  }
