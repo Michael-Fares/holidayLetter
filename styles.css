@@ -15,7 +15,8 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    overflow: hidden;
+    overflow: none;
+    margin-top: 0.5rem;
 }
 .sectioncontainer, .sectioncontainer2, .topcontainer {
     display: flex;
@@ -27,26 +28,41 @@ body {
 
 .jess {
     background-image: url('./jess-yoga.jpeg');
-    height: 300px;
-    width: 15rem;
+    height: 500px;
+    width: 100vw;
     background-size: contain;
     background-repeat: no-repeat;
-    overflow: hidden;
-    margin: 0.5rem auto;
+    overflow: none;
+    background-position: center;
 }
 .michael {
     background-image: url('./michael-cat.jpeg');
-    height: 300px;
-    width: 15rem;
+    height: 500px;
+    width: 100vw;
     background-size: contain;
     background-repeat: no-repeat;
-    overflow: hidden;
-    margin: 0.5rem auto;
+    overflow: none;
+    background-position: center;
 }
 .intro {
-    text-align: center;
     margin: 1rem;
 }
+.michael, .jess {
+    margin-bottom: 1.5rem;
+}
+
+/* Selects the first letter of a <p> */
+.intro::first-letter {
+    font-size: 200%;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0.5rem;
+}
+.best::first-letter {
+    font-size: 200%;
+}
+
 
 .maincontainer > div, .maincontainer > p, .title {
     padding: 0.25rem 1rem;
@@ -54,6 +70,7 @@ body {
 .title, .subtitle {
     text-align: center;
     font-family: 'Pacifico', cursive;
+    margin-right: 0.5rem;
     
 }
 .title {
@@ -63,6 +80,9 @@ body {
 }
 .subtitle {
     color: darkgreen;
+}
+.intro, .best {
+    font-size: 1.5rem;
 }
 
 
@@ -89,6 +109,7 @@ body {
     .michael-jess {
         width: 100%;
         margin: 0 auto;
+        height: 30rem;
     }
     .michael {
     order: 2;
@@ -103,10 +124,11 @@ body {
     }
     .michael, .jess {
         width: 100%;
+        height: 400px;
         background-position: center;
     }
     .intro {
         text-align: center;
-        margin: 0 0.5rem;
+        margin: 1rem;
     }
   }
