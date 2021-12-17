@@ -9,15 +9,15 @@ body {
     flex-direction: column;
 }
 .michael-jess {
-    background-image: url('./jess-michael3.jpg');
-    height: 20rem;
+    background-image: url('./jess-michael4.jpeg');
+    height: 500px;
     width: 100vw;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     overflow: none;
-    margin-top: 0.5rem;
 }
+
 .sectioncontainer, .sectioncontainer2, .topcontainer {
     display: flex;
     justify-content: center;
@@ -84,7 +84,16 @@ body {
 .intro, .best {
     font-size: 1.5rem;
 }
-
+.simpsons {
+    background-image: url('./simpsons.jpg');
+    height: 600px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    overflow: none;
+    margin-top: 0.5rem;
+}
 
 
 @media all and (min-width: 800px) {
@@ -130,5 +139,11 @@ body {
     .intro {
         text-align: center;
         margin: 1rem;
+    }
+  
+    .simpsons {
+        height: 500px;
+        width: 600px;
+        background-size: cover;
     }
   }
