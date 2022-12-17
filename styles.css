@@ -9,7 +9,7 @@ body {
     flex-direction: column;
 }
 .michael-jess {
-    background-image: url('./jess-michael4.jpeg');
+    background-image: url('./michael-jess.jpg');
     height: 500px;
     width: 100vw;
     background-size: contain;
@@ -23,11 +23,27 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 0.5rem;
+    width: 100vw;
+}
+.socks-stella-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
 }
 
 .jess {
-    background-image: url('./jess-yoga.jpeg');
+    background-image: url('./jess-yoga.jpg');
+    height: 500px;
+    width: 100vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: none;
+    background-position: top;
+}
+.socks-stella {
+    background-image: url('./socks-stella.jpg');
     height: 500px;
     width: 100vw;
     background-size: contain;
@@ -36,7 +52,7 @@ body {
     background-position: center;
 }
 .michael {
-    background-image: url('./michael-cat.jpeg');
+    background-image: url('./michael-cat.jpg');
     height: 500px;
     width: 100vw;
     background-size: contain;
@@ -45,10 +61,10 @@ body {
     background-position: center;
 }
 .intro {
-    margin: 1rem;
+    margin: 0.25rem;
 }
 .michael, .jess {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
 /* Selects the first letter of a <p> */
@@ -86,64 +102,11 @@ body {
 }
 .simpsons {
     background-image: url('./simpsons.jpg');
-    height: 600px;
+    height: 400px;
     width: 100vw;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    overflow: none;
-    margin-top: 0.5rem;
 }
 
 
-@media all and (min-width: 800px) {
-    .topcontainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .sectioncontainer {
-        display: grid;
-        grid-template-columns: 0.3fr 1fr;
-        
-    }
-    .sectioncontainer2 {
-        display: grid;
-        grid-template-columns: 1fr 0.3fr;
-        
-    }
-    p {
-        padding: 20px;
-        font-size: 1.5rem;
-    }
-    .michael-jess {
-        width: 100%;
-        margin: 0 auto;
-        height: 30rem;
-    }
-    .michael {
-    order: 2;
-    }
-    .title {
-        font-size: 6rem;
-        margin-bottom: 0.5rem;
-    }
-       
-    .subtitle {
-        font-size: 3rem;
-    }
-    .michael, .jess {
-        width: 100%;
-        height: 400px;
-        background-position: center;
-    }
-    .intro {
-        text-align: center;
-        margin: 1rem;
-    }
-  
-    .simpsons {
-        height: 500px;
-        width: 600px;
-        background-size: cover;
-    }
-  }
